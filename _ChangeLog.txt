@@ -1,0 +1,28 @@
+
+version 0.1
+
+Cell behavior
+-Added default cell type (pink), wich generates energy over time
+-Added splitting of cells, when the collected energy is sufficient, giving new life costs energy
+-Added coolling time between posseble splitting
+-Added max life time for cells and cell death upon reaching the age limit
+-Added dead cell type (white), wich not generates energy
+
+UI
+- Added world status to console output (showing total cells generated, alive cells and dead cells)
+
+==============================================================================
+version 0.2 (23.03.2020)
+
+Environment
+- Added environment generation with two walls and bottom slab, all resizable
+- Using gravity is possible and will not break core simulation
+
+Cell behavior
+- Added dying process, which reduce cell density (mass/size ratio) and changes color smoothly
+- Added resizing: cell mass and size will increase or decrease according accumulated energy
+- Added birth process: new child cell will appear inside parent cell and gradually separate from it. 
+- During birth process energy generaion and other possible actions are blocked fo both child and parent
+
+Grafics and FX
+- Added nice look to cells
